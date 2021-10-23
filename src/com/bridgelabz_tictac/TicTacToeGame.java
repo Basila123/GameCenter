@@ -29,7 +29,6 @@ public class TicTacToeGame {
         // giving preferance to player
         Scanner sc = new Scanner(System.in);
         player = sc.next().toUpperCase(Locale.ROOT).charAt(0);
-        do {
             if (player == 'X') {
                 computer = 'O';
                 System.out.println("Player is :" + player);
@@ -40,12 +39,10 @@ public class TicTacToeGame {
                 System.out.println("Player is:" + player);
                 System.out.println("Computer is:" + computer);
             } else {
-                System.out.println("Invalid entry");
-                System.out.println("Do you want to try again press 'Y'for yes or 'N' for no");
-                //  Scanner c=new Scanner(System.in);
-                play = sc.next().charAt(0);
+                System.out.println("Invalid data. Please enter the choice");
+                userInput();
+
             }
-        } while (play == 'Y' || play == 'y');
 
 
         //play.close();
