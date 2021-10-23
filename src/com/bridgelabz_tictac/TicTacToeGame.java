@@ -1,7 +1,5 @@
 package com.bridgelabz_tictac;
-
 import java.util.*;
-
 public class TicTacToeGame {
     //declaring char array as static
     static char board[] = new char[10];
